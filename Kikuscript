@@ -6440,7 +6440,7 @@ local TeleportCheck = false
 Players.LocalPlayer.OnTeleport:Connect(function(State)
 	if KeepInfYield and (not TeleportCheck) and queueteleport then
 		TeleportCheck = true
-		queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()")
+		queueteleport("loadstring(game:HttpGet("https://raw.githubusercontent.com/pumpkiku/Kiku.EXE/refs/heads/main/Kikuscript",true))()
 	end
 end)
 
@@ -13026,7 +13026,7 @@ end)
 
 task.spawn(function()
 	local success, latestVersionInfo = pcall(function() 
-		local versionJson = game:HttpGet("https://raw.githubusercontent.com/pumpkiku/Kiku.EXE/refs/heads/main/Kikuscript%20(IY%20but%20changed)",true))()
+		local versionJson = game:HttpGet("https://raw.githubusercontent.com/pumpkiku/Kiku.EXE/refs/heads/main/Kikuscript",true))()
 		return HttpService:JSONDecode(versionJson)
 	end)
 
